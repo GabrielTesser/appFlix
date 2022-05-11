@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appfilme.categoria.drama">
+    <ContentPage.Content>
+        
+        <StackLayout Orientation="Vertical" BackgroundColor="Black">
+            <Image x:Name="logo" Style="{StaticResource LogoNaListaDePoster}"/>
+
+            <ScrollView>
+
+                <Grid Padding="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="300"/>
+                        <RowDefinition Height="300"/>
+                        <RowDefinition Height="300"/>
+                    </Grid.RowDefinitions>
+
+                    <ImageButton x:Name="jogo_imitacao"
+                                 Grid.Row="0" Grid.Column="0"
+                                 Style="{StaticResource ButtonPosters}"
+                                 Clicked="jogo_imitacao_Clicked"/>
+
+                    <ImageButton x:Name="me_chame"
+                                 Grid.Row="0" Grid.Column="1"
+                                 Style="{StaticResource ButtonPosters}"
+                                 Clicked="me_chame_Clicked"/>
+
+                    <ImageButton x:Name="rede_social"
+                                 Grid.Row="1" Grid.Column="0"
+                                 Style="{StaticResource ButtonPosters}"
+                                 Clicked="rede_social_Clicked"/>
+
+                    <ImageButton x:Name="sonho_possivel"
+                                 Grid.Row="1" Grid.Column="1"
+                                 Style="{StaticResource ButtonPosters}"
+                                 Clicked="sonho_possivel_Clicked"/>
+
+
+
+
+                </Grid>
+
+            </ScrollView>
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

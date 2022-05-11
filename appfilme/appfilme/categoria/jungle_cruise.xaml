@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appfilme.categoria.Page1">
+    <ContentPage.Content>
+        <StackLayout Background="black">
+            
+            <Image x:Name="logo" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="300"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <WebView x:Name="visualizador"
+                         Grid.ColumnSpan="2"
+                         Source="https://www.youtube.com/embed/f_HvoipFcA8"
+                         Grid.Row="0" Grid.Column="0"
+                         VerticalOptions="FillAndExpand"
+                         BackgroundColor="Red"/>
+
+                <Image x:Name="jungle_cruise" Grid.Row="1" Grid.Column="0" Aspect="AspectFill"/>
+          
+            </Grid>
+
+            <Label Text="nome" TextColor="red"/>
+            <Label Text="Jungle Cruise" TextColor="White"/>
+            <Label Text="ano de lançamento" TextColor="red"/>
+            <Label Text="29 de julho de 2021" TextColor="White"/>
+            <Label Text="direção" TextColor="red"/>
+            <Label Text="Jaume Collet-Serra" TextColor="White"/>
+
+            <Label Text="Sinopse" TextColor="red"/>
+            <Label Text="A Dra. Lily Houghton pede a ajuda do sagaz capitão Frank Wolff para levá-la à Amazônia em seu barco em ruínas. Juntos, eles procuram por uma árvore ancestral que detém o poder de curar - uma descoberta que deve mudar o futuro da medicina."
+                   TextColor="White"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

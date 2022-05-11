@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appfilme.MainPage">
+
+    <StackLayout Background="black">
+
+        <Grid RowSpacing="1" ColumnSpacing="10" Padding="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Image x:Name="logo" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+            <Button BackgroundColor="red"
+                    Text="aventura" Grid.Row="1" Grid.Column="0" 
+                    FontSize="25"
+                    VerticalOptions="Fill" HorizontalOptions="Center"
+                    Style="{StaticResource ButtonVermelhoMenu}"
+                    Clicked="Btn_Open_Aventura"
+                    />
+            
+            <Button BackgroundColor="red"
+                    Text="comedia" Grid.Row="1" Grid.Column="1" 
+                    FontSize="30"
+                    VerticalOptions="Fill" HorizontalOptions="Center"
+                    Style="{StaticResource ButtonVermelhoMenu}"
+                    Clicked="Btn_Open_Comedia"
+                    />
+
+            <Button BackgroundColor="red"
+                    Text="drama" Grid.Row="2" Grid.Column="0" 
+                    FontSize="30"
+                    VerticalOptions="Fill" HorizontalOptions="Center"
+                    Style="{StaticResource ButtonVermelhoMenu}"
+                    Clicked="Btn_Open_Drama"
+                    />
+
+            <Button BackgroundColor="red"
+                    Text="terror" Grid.Row="2" Grid.Column="1" 
+                    FontSize="30"
+                    VerticalOptions="Fill" HorizontalOptions="Center"
+                    Style="{StaticResource ButtonVermelhoMenu}"
+                    Clicked="Btn_Open_Terror"
+                    />
+
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
